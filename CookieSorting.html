@@ -43,12 +43,30 @@
 			
 				for(var  i=0; i<4; i++){
 
-				console.log(i); 
-				var currentCookie = myCookies[i];
-				console.log(currentCookie);
+			//console.log(i); 
 
-				}
+					var currentCookie = myCookies[i];
+			//console.log(currentCookie);
+					if (currentCookie.shape == "square") {
 
+						console.log(currentCookie);
+
+			// Because shape is square, add the currentCookie to my faves list
+						myFaves.push(currentCookie);
+
+					} else {
+			// otherwise, add the currentCookie to theRest list
+						theRest.push(currentCookie);
+
+					}  //This is the end of my if/else statement
+
+					} //This is the edn of my for loop
+					
+					console.log("finished lists");
+					console.log(myFaves);
+					console.log(theRest);
+					
+			// we are not creating a new mycookies[i], we are creating a shorthand for it. we are doing this for clarity
 			//console log has to come before the last curly brace because otherwise it wouldn't be defined. Anything that is defined in the foreloop stays there. 
 
 		</script>
